@@ -73,7 +73,10 @@ body {
 }
 .resultado p:nth-child(2) {
     margin-top: 20px;
-    color: var(--azul-dark);
+    color: var(--aqua);
+    border: solid 1px var(--azul-light);
+    padding: 5px;
+    border-radius: 5px;
 }
 #volver {
     margin-top: 40px;
@@ -119,9 +122,5 @@ body {
         display: grid;
         place-items: center;
         padding: 30px;
-    }
-    .resultado p:nth-child(2) {
-        margin-top: 20px;
-        color: var(--azul-dark);
     }
 }

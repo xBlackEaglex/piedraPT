@@ -50,6 +50,7 @@ function manejarClicJugador2(e) {
     } else {
         resultados.style.display = "grid";
         ganador.textContent = resultado;
+        text.style.display = "flex";
     }
 }
 
