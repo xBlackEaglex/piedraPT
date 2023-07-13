@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --azul-dark: #395B64;
+    --azul-light: #A5C9CA;
+    --aqua: #E7F6F2;
+    --grey: #2C3333;
+    --sm: 16px;
+    --md: 24px;
+    --lg: 40px;
+    --sm-mb: 10px;
+    --md-mb: 18px;
+    --lg-mb: 34px;
+}
+body {
+    background-color: var(--grey);
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.title {
+    width: 100%;
+    height: 200px;
+}
+.title h1 {
+    width: 100%;
+    height: 100%;
+    color: var(--aqua);
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+.seleccion p {
+    font-size: var(--md-mb);
+    font-weight: bold;
+    color: var(--azul-light);
+    display: grid;
+    place-items: center;
+    padding: 14px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+}
+.seleccion button {
+    margin: 0px 14px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.seleccion button img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+}
+.resultado {
+    font-size: var(--md-mb);
+    color: var(--azul-light);
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+.resultado p:nth-child(2) {
+    margin-top: 20px;
+    color: var(--azul-dark);
+}
+#volver {
+    margin-top: 40px;
+    background-color: #A5C9CA;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Inicio de las media queries*/
+@media (min-width: 600px) {
+    .title h1 {
+        width: 100%;
+        height: 100%;
+        color: var(--aqua);
+        font-size: 55px;
+        display: grid;
+        place-items: center;
+    }
+    .seleccion p {
+        font-size: var(--md);
+        font-weight: bold;
+        color: var(--azul-light);
+        display: grid;
+        place-items: center;
+        padding: 14px;
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+    }
+    .seleccion button {
+        width: 150px;
+        height: 150px;
+    }
+    .seleccion button img {
+        border-radius: 10px;
+    }
+    .resultado {
+        font-size: var(--md);
+        color: var(--azul-light);
+        font-weight: bold;
+        display: grid;
+        place-items: center;
+        padding: 30px;
+    }
+    .resultado p:nth-child(2) {
+        margin-top: 20px;
+        color: var(--azul-dark);
+    }
+}

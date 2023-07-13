@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>P,P,T</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="article">
+        <section class="title">
+          <h1>Piedra, Papel o Tijera?</h1>
+        </section>
+        <section class="seleccion">
+          <p>Jugador 1</p>
+          <div class="boton" id="botones1">
+            <button type="button" id="piedra1" class="piedra">
+              <img src="./img/piedra.png" alt="piedra" />
+            </button>
+            <button type="button" id="papel1" class="papel">
+              <img src="./img/papel.png" alt="papel" />
+            </button>
+            <button type="button" id="tijera1" class="tijera">
+              <img src="./img/tijera.png" alt="tijera" />
+            </button>
+          </div>
+          <p>Jugador 2</p>
+          <div class="boton" id="botones2">
+            <button type="button" id="piedra2" class="piedra">
+              <img src="./img/piedra.png" alt="piedra" />
+            </button>
+            <button type="button" id="papel2" class="papel">
+              <img src="./img/papel.png" alt="papel" />
+            </button>
+            <button type="button" id="tijera2" class="tijera">
+              <img src="./img/tijera.png" alt="tijera" />
+            </button>
+          </div>
+        </section>
+        <section class="resultado">
+          <p id ="text">El ganador es el</p>
+          <p id="ganador"></p>
+          <button id="volver">Volver a jugar</button>
+        </section>
+      </article>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
