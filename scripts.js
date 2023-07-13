@@ -35,14 +35,12 @@ function determinarGanador(jugada1, jugada2) {
 // Función para manejar el evento de clic en los botones
 function manejarClicJugador1(e) {
     seleccion1 = e.currentTarget.classList.value;
-    console.log(seleccion1);
     botones1.style.display = "none";
     botones2.style.display = "flex";
 }
 
 function manejarClicJugador2(e) {
     seleccion2 = e.currentTarget.classList.value;
-    console.log(seleccion2);
     botones2.style.display = "none";
     const resultado = determinarGanador(seleccion1, seleccion2);
     if (resultado === "Empate") {
@@ -56,8 +54,8 @@ function manejarClicJugador2(e) {
 }
 
 function inicio() {
-  botones1.style.display = "flex";
-  resultados.style.display = "none";
+    botones1.style.display = "flex";
+    resultados.style.display = "none";
 }
 
 // Agregar manejadores de eventos a los botones del jugador 1
